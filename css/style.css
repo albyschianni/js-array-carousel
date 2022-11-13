@@ -5,11 +5,9 @@
 }
 .container {
     padding-top: 100px;
-}
-
-.item-container {
     margin: 0 auto;
     width: 60%;
+    position: relative;
 }
 
 .item {
@@ -25,14 +23,10 @@ img {
     object-position: 0 30%;
 }
 
-.slider {
-    position: relative;
-}
-
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -42,12 +36,12 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    right: 20%;
+    right: 0;
 }
 .prev {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -57,9 +51,12 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    left: 20%;
+    left: 0;
 }
 
 .active {
     display: block;
+}
+.hidden{
+    display: none;
 }
