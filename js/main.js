@@ -37,8 +37,8 @@ divArrey[0].classList.add("active")
 let activeItem = 0;
 
 
-let next = document.getElementsByClassName("next");
-let prev = document.getElementsByClassName("prev");
+let next = document.querySelector(".next");
+let prev = document.querySelector(".prev");
 
 
 next.addEventListener ("click",
@@ -68,7 +68,6 @@ function (){
 });
 
 prev.addEventListener("click",
-
 function (){
 
     if (activeItem > 0){
